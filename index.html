@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emphatic Coffee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #8B4513; /* Marrón oscuro para la cabecera */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-container {
+            width: 80px; /* Tamaño del círculo del logo */
+            height: 80px;
+            background-color: #FF8C00; /* Naranja brillante del logo */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            overflow: hidden; /* Asegura que la imagen del logo se recorte si es más grande */
+        }
+        .logo-container img {
+            height: 100%; /* Ajusta la imagen al tamaño del contenedor */
+            width: 100%;
+            object-fit: cover; /* Mantiene las proporciones y cubre el área */
+        }
+        .header-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .header-text h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        .header-text p {
+            margin: 0;
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        nav {
+            background-color: #CD853F; /* Marrón más claro para la navegación */
+            padding: 0.7rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #D2B48C;
+            color: #5A2D0C;
+        }
+        .hero {
+            background-image: url('img/fotoooo.png'); /* Imagen de fondo para la sección principal */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.5em;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h3 {
+            color: #8B4513;
+            border-bottom: 2px solid #FF8C00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .menu-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .menu-item h4 {
+            color: #8B4513;
+            margin-top: 0;
+        }
+        .menu-item p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="img/Gemini_Generated_Image_jo7b1sjo7b1sjo7b.png" alt="Logo Emphatic Coffee">
+        </div>
+        <div class="header-text">
+            <h1>Emphatic Coffee</h1>
+            <p>Tu dosis diaria de inspiración</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Nuestro Menú</a>
+        <a href="#acerca">Acerca de Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <div>
+           
+            <h2>Despierta tus Sentidos</h2>
+            <p>Con cada taza de Emphatic Coffee, una experiencia única.</p>
+        </div>
+        </div>
+        
+    </section>
+
+    <div class="container">
+        <section id="menu" class="section">
+            <h3>Nuestro Menú</h3>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="img/expreso.jpg" alt="Espresso">
+                    <h4>Espresso</h4>
+                    <p>Un clásico intenso y aromático para los verdaderos amantes del café.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="img/latte.jpg" alt="Latte">
+                    <h4>Latte</h4>
+                    <p>Suave y cremoso, con la cantidad justa de leche vaporizada.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="img/capuchino.jpg" alt="Capuccino">
+                    <h4>Capuccino</h4>
+                    <p>La combinación perfecta de café, leche y una capa de espuma.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="img/moca.webp" alt="Moca">
+                    <h4>Moca</h4>
+                    <p>Para los golosos, café con chocolate y crema batida.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="acerca" class="section">
+            <h3>Acerca de Nosotros</h3>
+            <p>En Emphatic Coffee, creemos que el café es más que una bebida; es una experiencia. Seleccionamos los mejores granos de café de todo el mundo y los tostamos con pasión para ofrecerte un sabor inigualable. Nuestra misión es crear un espacio donde puedas relajarte, conectar y disfrutar de momentos especiales con una taza de café perfecta.</p>
+            <p>Desde nuestros inicios, nos hemos comprometido con la sostenibilidad y el comercio justo, asegurando que cada taza que disfrutes no solo sea deliciosa, sino también ética.</p>
+        </section>
+
+        <section id="contacto" class="section">
+            <h3>Contacto</h3>
+            <p>¿Tienes preguntas o quieres hacer un pedido especial? ¡Nos encantaría escucharte!</p>
+            <p>Instagram: EMPHATIC_COFFE</p>
+            <p>*Teléfono: +56 936535775</p>
+            <p>Dirección: AV. Pedro Aguirre Cerda 8432</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 𝙀𝙢𝙥𝙝𝙖𝙩𝙞𝙘 𝘾𝙤𝙛𝙛𝙚𝙚. 𝙏𝙤𝙙𝙤𝙨 𝙡𝙤𝙨 𝙙𝙚𝙧𝙚𝙘𝙝𝙤𝙨 𝙧𝙚𝙨𝙚𝙧𝙫𝙖𝙙𝙤𝙨.</p>
+    </footer>
+
+</body>
+</html>
